@@ -264,7 +264,7 @@ def drawmissile(num_missile,x,y):
     label("X "+str(num_missile),x+65,y+5,30,orange)
 
 def label(msg,x,y,size,color):
-    font = pygame.font.SysFont("comicsansms",size)
+    font = pygame.font.SysFont("Trebuchet MS",size)
     text = font.render(msg,True,color)
     screen.blit(text,(x,y))
 
@@ -278,7 +278,7 @@ def Button(msg,x,y,width,height,i_color,a_color,command=None):
             command()
     else:
         pygame.draw.rect(screen,i_color,(x,y,width,height))
-    buttontext = pygame.font.SysFont("comicsansms",20)
+    buttontext = pygame.font.SysFont("Trebuchet MS",20)
     buttonmsg = buttontext.render(msg,True,black)
     buttonmsgrect = buttonmsg.get_rect()
     buttonmsgrect.center = ((x+width/2),(y+height/2))
